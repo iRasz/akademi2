@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/soal.html" },
+    { "source": "/soal", "destination": "/soal.html" },
+    { "source": "/wr", "destination": "/wr.html" }
+  ]
+}
