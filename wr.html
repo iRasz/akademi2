@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WR MLBB X Naruto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=JetBrains+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">⚡ WR MLBB</div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-menu" id="navMenu">
+      <a href="/">Beranda</a>
+      <a href="/wr">WR</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Hitung Winrate (WR)</h1>
+    <p>Masukan jumlah kemenangan dan total permainan:</p>
+    <input type="number" id="winCount" placeholder="Jumlah kemenangan" min="0" />
+    <input type="number" id="totalGames" placeholder="Total permainan" min="1" />
+    <button onclick="calculateWR()">Hitung WR</button>
+
+    <div id="resultWr"></div>
+  </div>
+
+  <footer>&copy; 2025 Rass</footer>
+
+  <script src="/js/wr.js"></script>
+
+</body>
+</html>
